@@ -1,0 +1,6 @@
+height = input("What is the height? ")
+width = input("What is the width? ")
+area = float(height) * float(width)
+perimeter = 2*(float(height)+float(width))
+print("The area is:", area)
+print("The perimeter is:", perimeter)
