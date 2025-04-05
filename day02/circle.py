@@ -1,5 +1,6 @@
-rad = input("What is the radius of the circle? ")
-area = 3.14 * float(rad) * float(rad)
-cir = 2 * 3.14 * float(rad)
+import math
+rad = float(input("What is the radius of the circle? "))
+area = math.pi * rad**2
+cir = 2 * math.pi * rad
 print("The area is:", area)
 print("The circumference is:", cir)
