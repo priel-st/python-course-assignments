@@ -8,6 +8,5 @@ for ch in seq:
 seq_3 = seq_2.split("X")
 while "" in seq_3:
     seq_3.remove("")
-print(seq_3)
 seq_3.sort(key = len, reverse = True)
 print(seq_3)
