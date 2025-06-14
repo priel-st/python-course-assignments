@@ -1,8 +1,8 @@
 def join_numbers(num_list):
   """
   This function joins a list of integers into one string of digits
-  >>>join_numbers([123,455,01])
-  12345501
+  >>> join_numbers([123,455,1])
+  '1234551'
   """
   joined = "".join(map(str, num_list))
   return joined
@@ -10,8 +10,8 @@ def join_numbers(num_list):
 def digit_list(joined):
   """
   This function extracts unique digits from a string to an ordered list
-  >>>digit_list(1231230)
-  ['0','1','2','3']
+  >>> digit_list('1231230')
+  ['0', '1', '2', '3']
   """
   L=[]
   for digit in joined:
@@ -28,3 +28,7 @@ def count_dig(L, joined):
     num = joined.count(x)
     print("{:<2}{}".format(x, num))
   return None
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
