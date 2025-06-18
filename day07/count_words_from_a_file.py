@@ -1,6 +1,7 @@
 import sys
 
 filename = sys.argv[1]
+#Text file: lorem.txt
 
 Dict = {}
 with open(filename, "r") as file:
