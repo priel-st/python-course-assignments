@@ -31,6 +31,7 @@ for key, values in codon_table.items():
         aa_table[val] = key
 
 filename = sys.argv[1]
+#Text name: ser_seq.txt
 
 aa_count = {}
 L=[]
